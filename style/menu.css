@@ -1,0 +1,119 @@
+.menu {
+    display: inline-flex;
+    max-width: 1440px;
+    background-color: var(--clr-text-secondary);
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    /* Duzo lepsze od position fixed, zachowuje właściwości blocku */
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    padding: 0 20px;
+}
+
+.menu__logo {
+    width: 50%;
+}
+
+.menu__logo-img {
+    width: 70px;
+    height: 70px;
+}
+
+.menu__reference {
+    width: 50%;
+    height: 100%;
+}
+
+.menu__reference-link {
+    text-decoration: none;
+    color: var(--clr-text);
+}
+
+.menu__reference-link:hover {
+    color: var(--clr-accent);
+}
+
+.menu__list {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    font-size: 2rem;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu__item {
+    margin: 20px;
+}
+
+.menu__link {
+    color: black;
+}
+
+.hamburger {
+    display: none;
+    width: 37px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hamburger__bar:nth-child(1).active {
+    transform: rotate(28deg);
+    transform-origin: 0% 0%;
+}
+
+.hamburger__bar:nth-child(2).active {
+    opacity: 0;
+}
+
+.hamburger__bar:nth-child(3).active {
+    transform: rotate(-28deg);
+    transform-origin: 0% 100%;
+}
+
+.hamburger__bar {
+    width: 100%;
+    height: 2px;
+    background-color: var(--clr-text);
+}
+
+
+/* Tutaj dodałem jedną zalezność (po przecicnku (max-wdith: 760px)) przetesuj sobie, zobacz jak sie zachowuje strona bez ostaniej własciwosci (max-wdith: 760px) */
+
+@media (orientation: landscape) and (max-width: 760px),
+(max-width: 760px) {
+    .hamburger {
+        display: flex;
+    }
+    .menu__list {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        z-index: 4;
+        background-color: var(--clr-text-secondary);
+        padding-bottom: 30px;
+        transform: translateX(-100%);
+    }
+    .menu__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 20px;
+    }
+    .menu__link {
+        padding: 10px 0;
+    }
+    .menu__reference {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}

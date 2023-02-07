@@ -1,0 +1,47 @@
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.headline {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px 50px 30px;
+}
+
+.headline__count {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.headline__count::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 40%;
+    height: 1px;
+    background-color: var(--clr-text);
+}
+
+.headline__title {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.btn {
+    color: var(--clr-text-secondary);
+    border: 0;
+    cursor: pointer;
+    padding: 15px 40px;
+}
+
+a {
+    text-decoration: none;
+}

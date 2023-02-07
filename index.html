@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/shared.css" />
+    <link rel="stylesheet" href="style/menu.css" />
+    <link rel="stylesheet" href="style/initial.css" />
+    <link rel="stylesheet" href="style/colection.css" />
+    <link rel="stylesheet" href="style/aboutus.css" />
+    <link rel="stylesheet" href="style/contact.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="menu__logo">
+            <a href="index.html">
+                <img class="menu__logo-img" src="photos/logo.svg" alt="logo" />
+            </a>
+        </div>
+        <div class="menu__reference">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="http://" class="menu__link">woman</a>
+                </li>
+                <li class="menu__item">
+                    <a href="http://" class="menu__link">man</a>
+                </li>
+                <li class="menu__item">
+                    <a href="http://" class="menu__link">kids</a>
+                </li>
+            </ul>
+            <button class="hamburger" onclick="menuOnClick()">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+        </div>
+    </nav>
+
+    <header class="initial" id="shop">
+        <div class="initial__left">
+            <div class="initial__wrapper">
+                <span class="initial__left-text">New</span>
+                <span class="initial__left-text">Season</span>
+                <button href="" class="btn btn--initial">Explore</button>
+            </div>
+        </div>
+        <div class="initial__right-img"></div>
+    </header>
+    <main>
+        <section class="section" id="colection">
+            <div class="headline">
+                <span class="headline__count">01</span>
+                <p class="headline__title">Colection</p>
+            </div>
+            <div class="colection__whole">
+                <div class="colection__block">
+                    <img class="colection__block-img" src="photos/2.jpg" alt="photo" />
+                    <div class="colection__block-caption">
+                        <p class="colection__title">FAUX SUEDE JACKET</p>
+                        <p class="colection__title">249zł</p>
+                    </div>
+                    <br />
+                    <p class="colection__block-text">
+                        Lorem ipsum dolor sit ament, consectetur adipiscing elit. Enim faucibus cursus letus metus vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim faucibus cursus letus metus vitae.
+                    </p>
+                    <br />
+                    <div class="btn__wrapper">
+                        <button href="" class="btn btn--colection">Check</button>
+                    </div>
+                </div>
+                <div class="colection__block">
+                    <img class="colection__block-img" src="photos/3.jpg" alt="photo" />
+                    <div class="colection__block-caption">
+                        <p class="colection__title">FAUX SUEDE JACKET</p>
+                        <p class="colection__title">249zł</p>
+                    </div>
+                    <br />
+                    <p class="colection__block-text">
+                        Lorem ipsum dolor sit ament, consectetur adipiscing elit. Enim faucibus cursus letus metus vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim faucibus cursus letus metus vitae.
+                    </p>
+                    <br />
+                    <div class="btn__wrapper">
+                        <button href="" class="btn btn--colection">Check</button>
+                    </div>
+                </div>
+                <div class="colection__block">
+                    <img class="colection__block-img" src="photos/4.jpg" alt="photo" />
+                    <div class="colection__block-caption">
+                        <p class="colection__title">FAUX SUEDE JACKET</p>
+                        <p class="colection__title">249zł</p>
+                    </div>
+                    <br />
+                    <p class="colection__block-text">
+                        Lorem ipsum dolor sit ament, consectetur adipiscing elit. Enim faucibus cursus letus metus vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim faucibus cursus letus metus vitae.
+                    </p>
+                    <br />
+                    <div class="btn__wrapper">
+                        <button href="" class="btn btn--colection">Check</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--aboutus" id="aboutus">
+            <div class="aboutus">
+                <div class="headline">
+                    <span class="headline__count">02</span>
+                    <p class="headline__title">About us</p>
+                </div>
+                <div class="aboutus__whole">
+                    <div class="aboutus__left">
+                        <img src="photos/5.jpg" alt="photo" class="aboutus__left-img" />
+                    </div>
+                    <div class="aboutus__right">
+                        <div class="aboutus__right-textwhole">
+                            <span class="aboutus__right-text">We</span>
+                            <span class="aboutus__right-text">Make</span>
+                            <span class="aboutus__right-text">Brand</span>
+                            <span class="aboutus__right-text">Stronger</span>
+                        </div>
+                        <p class="aboutus__right-textlower">
+                            Lorem ipsum dolor sit ament, consectetur adipiscing elit. Enim faucibus cursus letus metus vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim faucibus cursus letus metus vitae.
+                        </p>
+
+                        <button href="" class="btn btn--aboutus">How?</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="headline">
+                <span class="headline__count">03</span>
+                <p class="headline__title">Contact</p>
+            </div>
+            <div class="contact__whole">
+                <div class="contact__whole-form">
+                    <form>
+
+                        <input type="text" placeholder="  ADRES E-MAIL" class="contact__form-input" />
+                        <input type="text" placeholder="  NAME" class="contact__form-input" />
+                        <input type="text" placeholder="  SURNAME" class="contact__form-input" />
+                        <textarea name="blok" placeholder="  DESCRIPTION" class="contact__form-area"></textarea>
+                        <button class="btn btn--contact">SEND</button>
+
+                    </form>
+                </div>
+            </div>
+            <script src="app.js"></script>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__whole">
+            <div class="footer__left">
+                <p>Instagram</p>
+                <p>Facebook</p>
+            </div>
+            <div class="footer__right">
+                <a href="index.html#shop" class="footer__link">shop</a>
+                <a href="index.html#colection" class="footer__link">collection</a>
+                <a href="index.html#aboutus" class="footer__link">about us</a>
+                <a href="index.html#contact" class="footer__link">contact</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <img src="photos/logo.svg" class="footer__img" />
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+.initial {
+    width: 100%;
+    height: calc(100vh - 70px);
+    max-height: 1080px;
+    max-width: 1440px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--clr-brand);
+}
+
+.initial__left {
+    width: 35%;
+    height: 100%;
+    position: relative;
+    margin-left: auto;
+}
+
+.initial__left-text {
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--clr-text-secondary);
+}
+
+.btn--initial {
+    background-color: var(--clr-accent);
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.initial__right-img {
+    height: 100%;
+    width: 65%;
+    background-image: url("1.jpg");
+    background-size: cover;
+    background-position: left;
+}
+
+.initial__wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 54%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+@media (orientation: landscape) and (max-width: 960px),
+(max-width: 960px) {
+    .initial {
+        flex-direction: column;
+    }
+    .initial__left {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .initial__left-text {
+        font-size: 9rem;
+        font-weight: 300;
+    }
+    .initial__left-text:nth-child(2) {
+        margin-bottom: 40px;
+    }
+    .initial__right-img {
+        position: absolute;
+        width: 440px;
+        height: 460px;
+        border-radius: 20px;
+        transform: translateY(50px);
+    }
+    .btn--initial {
+        font-size: 2rem;
+        margin-top: 375px;
+    }
+    .initial__wrapper {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        align-items: center;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 460px) {
+    .initial__left-text {
+        font-size: 7rem;
+    }
+    .initial__right-img {
+        width: 300px;
+        height: 320px;
+        transform: translateY(30px);
+    }
+    .btn--initial {
+        font-size: 1.8rem;
+        margin-top: 240px;
+    }
+}
+
+@media (orientation: landscape) {
+    .initial {
+        min-height: 1000px;
+        /* mamy określoną wysokość maksymalną w initial wyżej więc w sumie to zamykamy go w przedziale 1000-1080px */
+    }
+}
+
+@media (orientation: portrait) and (height: 720px) {
+    .initial {
+        min-height: 1000px;
+    }
+}
