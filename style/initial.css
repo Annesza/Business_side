@@ -102,8 +102,7 @@
   .btn--initial {
     font-size: 1.8rem;
     margin-top: 230px;
-    padding: 2px;
-    background-color: aqua;
+    padding: 10px 30px;
   }
 }
 
