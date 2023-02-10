@@ -4,6 +4,7 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 50px
 }
 
 .colection__block {
@@ -60,7 +61,6 @@
     .btn--colection {
         width: 100%;
         padding: 10px;
-        margin-bottom: 100px;
     }
     .colection__block-text {
         font-size: 1.8rem;

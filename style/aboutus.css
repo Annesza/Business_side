@@ -7,6 +7,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 40px;
     padding-bottom: 60px;
     width: 100%;
 }
@@ -21,7 +22,6 @@
 
 .aboutus__right {
     max-width: 500px;
-    margin: 0 0 0 50px;
 }
 
 .aboutus__right-textwhole {
@@ -64,6 +64,9 @@
 
 @media (orientation: landscape) and (max-width: 760px),
 (max-width: 760px) {
+    .aboutus__whole {
+        padding: 0 20px;
+    }
     .aboutus__right {
         margin: 20px 0 0 0;
     }
