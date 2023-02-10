@@ -1,51 +1,76 @@
 .footer {
-  width: 100%;
-  background-color: var(--clr-brand);
-  color: var(--clr-text-secondary);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
+    width: 100%;
+    background-color: var(--clr-brand);
+    color: var(--clr-text-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
 }
 
 .footer__whole {
-  padding: 50px 20px 0 20px;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    padding: 50px 20px 0 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .footer__left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 6.5rem;
 }
 
 .footer__right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: right;
-  font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    font-size: 3rem;
 }
 
 .footer__img {
-  width: 100px;
-  filter: brightness(0) invert(1);
-  margin: 0 auto;
+    width: 100px;
+    filter: brightness(0) invert(1);
+    margin: 0 auto;
 }
 
 .footer__bottom {
-  margin: auto;
+    margin: auto;
 }
 
 .footer__link {
-  text-decoration: none;
-  color: white;
-  padding: 5px 0;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+}
+
+@media (orientation: landscape) and (max-width: 760px),
+(max-width: 760px) {
+    .footer__whole {
+        flex-direction: column-reverse;
+    }
+    .footer__right {
+        text-align: center;
+        font-size: 2.3rem;
+    }
+    .footer__left {
+        text-align: center;
+        font-size: 4rem;
+    }
+    .footer__right::after {
+        content: "";
+        background-color: var(--clr-text-secondary);
+        width: 100%;
+        height: 1px;
+        margin-top: 5px;
+    }
+    .footer__img {
+        width: 75px;
+    }
 }
